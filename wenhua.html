@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				margin: 0;
+			}
+			.clear{
+				clear: both;
+			}
+			nav{
+				margin-top: 5px;
+			}
+			nav div:nth-child(1){
+				width: 60%;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			nav section:nth-child(1) span{
+				font-size: 12px;
+				color: #B5B5B5;
+			}
+			nav section:nth-child(1) a{
+				color: #B5B5B5;
+				text-decoration: none;
+				padding-left: 5px;
+				
+			}
+			nav section:nth-child(1) span:nth-child(2){				
+				float: right;
+			}
+			nav div:nth-child(1) section:nth-child(2){
+				margin-top: 10px;
+			}
+			nav div:nth-child(1) section:nth-child(2) img{
+				width: 30%;
+				/*height: 67px;*/
+			}
+			nav div:nth-child(1) section:nth-child(2) div{
+				float: right;
+				line-height: 60px;	
+				/*background-color: white;*/			
+			}
+			nav div:nth-child(1) section:nth-child(2) div span:nth-child(1){
+				font-size: 13px;
+			}
+			nav div:nth-child(1) section:nth-child(2) div span:nth-child(2){
+				font-size: 30px;
+				color: #B90301;
+			}
+			 #two{
+			 	width:100%;
+			 	height: 33px;
+				background-color: #02BDCE;				
+			}
+			#two section{
+				width: 60%;
+				margin: 0 320px;
+			}
+			nav div:nth-child(2) section a{
+				float: left;
+				width: 7%;
+				margin-left: 35px;
+				line-height: 36px;
+				color: white;		
+				text-align: center;		
+			}
+			nav div:nth-child(2) section a:hover{
+				background-color: white;
+				color: black;
+			}
+			/*头部内容*/
+			header{
+				width: 100%;		
+			}						
+			header section:nth-child(1) img{
+				width: 67%;
+				height: 430px;
+			    margin-left: 17%;
+			
+			    
+			}
+			header section:nth-child(2) img{
+				margin-left:19.5%;
+				width: 61%;
+				/*border: 1px solid red;*/
+				margin-top: -40px;
+				padding-bottom: 10px;
+		
+			}
+			/*内容部分*/
+			main{
+				width: 100%;
+				margin: 0 auto;
+			}
+			.one{
+				width: 61%;
+				padding-bottom: 10px;
+				margin: 0 auto;
+			}
+			#left{
+				width: 40%;
+				display: inline-block;
+			}
+	         #left section:nth-child(1) img{
+				width: 320px;
+				height: 120px;
+			}
+			#left section:nth-child(2) p{
+				width: 320px;
+				text-indent: 2em;
+				margin: 2px;
+				font-size: 14.5px;
+				
+			}
+			#right{
+				float: right;
+			}
+			#right span{
+				float: right;
+				font-size: 14px;
+			}
+			#right a{
+				font-size: 14px;
+				text-decoration: none;
+				color: black;
+			}
+			#right section{
+				margin-top: 10px;
+				border-bottom: 1px dashed   gainsboro;
+			}
+			#right section:before{
+				content: url(image/tb.jpg);
+			}
+			#right section:hover{
+				color: coral;
+			}
+			#right div{
+				float: right;
+				font-size: 12px;
+				margin-top: 10px;
+			}
+			
+			/*第二个部分的内容*/
+			.two{
+				background: #f7f7f7;
+				width: 100%;
+				border:1px solid #E8E8E8;
+				
+			}
+			.two>div div{
+				float: left;
+				padding-right: 38px;
+				text-align: center;
+				margin-top: 25px;
+			    text-align: left;
+				
+			}
+			.two>div div p{
+				width: 240px;
+				margin: 9px;
+				font-size: 14px;
+				font-family: arial;
+				padding-left: 3px;
+				
+			}
+			.two>div{
+				width: 60%;
+				margin: 0 auto;								
+			}
+			.two>div div h4{
+				display: inline;
+				color: #B81A25;
+				font-size: 20px;
+				padding-left: 10px;				
+			}
+
+			.two>div div span{
+				color: #B5B5B5;
+			}
+		
+			.two>div div:nth-child(1) p:nth-child(2n){
+				font-size: 12px;
+				color: #B5B5B5;
+			}
+		
+			.three{
+				width: 100%;
+				margin-top: 20px;
+
+			}
+			#new{
+				clear: both;
+				width: 80%;
+				height: 60px;
+				line-height: 60px;
+				/*background-color: green;*/
+				margin: 0 auto;
+				text-align: center;				
+			}
+			#new span:nth-child(1){
+				color: #B81A25;
+				font-weight: 390px;
+				font-size: 20px;				
+			}
+			#new span:nth-child(2){
+				font-size: 15px;
+				color: #B5B5B5;
+				
+			}
+			.three div:nth-child(2) div{
+				width: 54%;
+				margin: 0 auto;
+				/*border: 1px solid red;*/
+			}
+			.three div:nth-child(2) div img{
+				width: 135px;
+				height: 190px;
+				margin-left: 15px;
+			}
+			/*页尾*/
+			footer{
+				width: 100%;
+				margin-top: 30px;
+				background-color: #F7F7F7;
+				border: 1px solid #EFEFEF;
+			}
+			
+			footer .company{
+				width: 62%;
+				margin: 0 auto;			
+				
+			}
+			footer .company ul{
+				float: left;
+				margin-left:60px ;
+
+			}
+			footer .company ul li{
+				font-size: 11px;
+				line-height: 25px;
+				margin-left: 10px;
+				color: #6B6B6B;
+			}
+			footer .company ul p{
+				font-size: 14px;
+				color: #333333;
+			}
+			footer .share{
+				margin-left: 28%;
+				margin-top: 15px;
+			}
+			footer .share img{
+				width: 80px;
+				height: 110px;
+				margin-right: 200px;
+			}
+			footer .link{
+				width: 100%;
+				padding-top: 15px;
+				margin-top: 20px;
+				background-color: #CFCFCF;
+			}
+			footer .link div{
+				width: 1000px;
+				margin: 0 auto;
+				text-align: center;			
+				padding: 5px;
+				font-size: 13px;
+			}
+			footer .link a{
+				text-decoration: none;
+				color: #343436;
+			}
+			footer .link p span:nth-child(2){
+				color: #343436;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div>
+			<section>
+				<span>欢迎来到福建文化传媒有限公司官方网站！</span>
+				<span>
+					<a href="">加入收藏</a>&#x3000;|
+					<a href="">联系我们</a>
+				</span>
+			</section>
+			<section >
+				<img  src="image/logo.jpg"/>
+				<div><span>咨询电话：</span><span>400-12345678</span></div>
+			</section>
+			  <!--<div class="clear"></div>-->
+			</div>
+			<div id="two">
+				<section>
+					<a href="">首页</a>
+					<a href="">公司概况</a>
+					<a href="">我要出书</a>
+					<a href="">作品展示</a>
+					<a href="">新闻动态</a>
+					<a href="">书号版权</a>
+					<a href="">出版常识</a>
+					<a href="">联系我们</a>
+				</section>
+			</div>
+		</nav>
+		<header>
+		<section>
+			<img src="image/hrea.png" />
+		</section>
+		<section>
+			<img  src="image/notice.jpg"/>
+		</section>
+		</header>
+		<main>
+			<section class="one">
+			 <div id="left">
+				<section>
+					<img src="image/cb.jpg" />
+				</section>
+				<section >
+					<p>河南省恒建文化传媒有限公司--中国020出版全程服务中原地区第一品牌。</p>
+					<p>专业从事各类图书出版策划，出版创作、排版、编辑、设计、印刷、发行一站式解决档案提供商：书籍出版+影视改编+数字出版+有声读物+手机读物+游戏改编（动漫）+海外版权</p>
+					<p>“出书出名，出名出书。”玩梦想/玩创意、玩跨界。恒建--你的作家经纪人。</p>
+				</section>
+			</div>
+			<div id="right">				
+					<section><a href="">国学那些事</a><span>2016-03-22 13:34:11</span></section>
+					<section><a href="">蜀铭文化新书又上架啦~</a><span>2016-03-21 16:45:52</span></section>
+					<section><a href="">蜀铭文化专著出版火热进行中</a><span>2016-03-17 17:06:06</span></section>
+					<section><a href="">蜀铭文化项目目录持续更新中</a><span>2016-03-16 16:12:00</span></section>
+					<section><a href="">20160315蜀铭文化十三五规划教材火爆预定中</a><span>2016-03-15 15:06:18</span></section>
+					<section><a href="">四川省蜀铭文化最新公告</a><span>2016-02-18 08:46:29</span></section>
+					<section><a href="">【蜀铭新书动态】《艺术设计与色彩应用》（杨丽/编）</a><span>2016-02-15 10:15:33</span></section>
+					<section><a href="">【蜀铭新书动态】《标准化基础上的桂林旅游业管理策略研究》(杨勇/</a><span>2016-02-17 11:17:50</span></section>
+					<div>+more</div>
+			</div>
+		  </section>
+		  
+		  <section class="two">
+		  	<div>
+		  	  <div>
+		  	  	<h4>流程在线 </h4><span> BOOK TRACKING</span>
+		  	  	<p >万老师《常见古典诗词典故》编辑加工进行中</p>
+		  	  	<p>2016-01-08|万民义、万德彧(编著)</p>
+		  	  	<p>迟老师《生涯规划与高考志愿填报秘籍》编辑加工中</p>
+		  	  	<p>2016-01-08|迟涵(著)</p>
+		  	  	<p>赵老师《最“表里不一”的英文俚语365》编辑加工中</p>
+		  	  	<p>2016-01-08|赵东(著)</p>
+		  	  </div>
+		  	  <div>
+		  	  	<img src="image/11.jpg" />
+		  	  </div>
+		  	  <div>
+		  	  		<h4>新闻搜索</h4><span> NEWS</span>
+		  	  		<p>残疾作家的坚毅出书路</p>
+		  	  		<p>老农也出书 村名齐点赞</p>
+		  	  		<p>9岁女孩众筹《一盒巧克力》</p>
+		  	  		<p>“兰州好人”自费出版9部《兰州通》</p>
+		  	  		<p>奶奶讲故事，孙女编成书</p>
+		  	  		<p>易出书致作家朋友们的一封信</p>
+		  	  		<p>刘震云获“埃及文化最高荣誉奖”</p>
+		  	  </div>
+		  	  <div>
+		  	  	<img src="image/11.jpg" />
+		  	  </div>
+		  	  <div>
+		  	  	<h4>出版常识</h4><span> COMMON SENSE</span>
+		  	  	<p>自费出书需要多长时间</p>
+		  	  	<p>自费出书也可以成为畅销书</p>
+		  	  	<p>自费出书的发行优势</p>
+		  	  	<p>版税or自费出书</p>
+		  	  	<p>样书二三事</p>
+		  	  	<p>图书印刷质量的自查</p>
+		  	  	<p>什么书适合众筹出版</p>
+		  
+		  	    </div>
+		  	  </div>
+		  	  	  <div class="clear"></div>
+		  </section>
+	
+		  <section class="three">
+		  	    <div id="new">
+		  	    	<span>最新上架</span> &nbsp;<span>LATEST SHELVES</span>
+		  	    </div>
+		  	    <div>
+		  	    	<div>
+		  	    		<img src="image/pro.jpg" alt="" />
+		  	    		<img src="image/pro1.jpg" alt="" />
+		  	    		<img src="image/pro2.jpg" alt="" />
+		  	    		<img src="image/pro3.jpg" alt="" />
+		  	    		<img src="image/pro1.jpg" alt="" />
+		  	    		<img src="image/pro2.jpg" alt="" />
+		  	    	</div>
+		  	    </div>
+		  	
+		  </section>
+		  
+		</main>
+		
+		<footer>
+			<div class="company">
+				
+				  <ul>
+					<p>公司概况</p>
+					<li>公司简介</li>
+					<li>我们的团队</li>
+					<li>合作伙伴</li>
+				</ul>						
+				<ul>
+					<p>出版类别</p>
+					<li>学术出版</li>
+					<li>医学出版</li>
+				</ul>				
+				<ul>
+					<p>出版常识</p>
+					<li>什么是按需印刷</li>
+					<li>什么是书号</li>
+					<li>什么叫图书的版权页</li>
+					<li>重大选题备案制度是什么</li>
+					<li>图书可能遇到哪些漏洞</li>
+				</ul>					
+				<ul>
+					<p>联系我们</p>
+					<li>公司地址：河南省郑州市管城区郑汴路东明路御玺大厦A座918室</li>
+					<li>乘车路线：85,985,206(郑汴路东明路下che)</li>
+					<li>联系电话：123456789</li>
+					<li>工作日意外时间:123456789</li>
+					<li>邮箱:123456阿斯顿@qq.com</li>
+					<li>400电话:400-12345678</li>
+				</ul>				
+			    <div class="clear"></div>
+			    <div class="share">
+				     <img src="image/weibo.jpg" alt="微博" />
+				     <img src="image/weixin.jpg" alt="微信" />
+			    </div>
+			</div>
+			<div class="link">
+				<div>
+				    <span>友情链接：</span>
+				    <a href="#">电子书</a>
+				    <a href="#">树上微出版</a>
+				    <a href="#">如何出书</a>
+				    <a href="#">自费出书</a>
+				    <p><span>版权：恒建文化传媒&#x3000;备案号黑B2—</span><span>—20130033&#x3000;360网站安全监测平台</span></p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
